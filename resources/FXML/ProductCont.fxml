@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#click" prefHeight="135.0" prefWidth="120.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductContController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="135.0" prefWidth="125.0" styleClass="productInfo-card" stylesheets="@../CSS/style.css">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="32.0" prefWidth="116.0">
+               <children>
+                  <Label fx:id="typeLabel" prefHeight="20.0" prefWidth="64.0" text="Brand" textFill="#36454f" HBox.hgrow="NEVER">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priceLabel" prefHeight="20.0" prefWidth="63.0" stylesheets="@../CSS/style.css" text="Price" textFill="#36454f" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="Verdana" size="9.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <ImageView fx:id="imageviewer" fitHeight="79.0" fitWidth="88.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icon/Empty.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="560.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <HBox layoutY="1.0" prefHeight="560.0" prefWidth="943.0" styleClass="window-design" stylesheets="@../CSS/style.css">
+         <children>
+            <VBox prefHeight="560.0" prefWidth="210.0" styleClass="side-vbox" stylesheets="@../CSS/style.css">
+               <children>
+                  <Pane prefHeight="155.0" prefWidth="233.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="51.0" layoutX="8.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/icons8-buying-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="57.0" layoutY="28.0" prefHeight="92.0" prefWidth="151.0" stylesheets="@../CSS/style.css" text="SHADE" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="37.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="23.6" offsetY="1.0" radius="6.94" spread="0.43" width="6.16">
+                                 <color>
+                                    <Color red="0.568771243095398" green="0.6399999856948853" blue="0.0575999990105629" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="305.0" prefWidth="213.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Button fx:id="toHomeButton" disable="true" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Home" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toCartButton" layoutY="65.0" mnemonicParsing="false" onAction="#switchToCartScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Cart" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toProdInfoButton" layoutY="130.0" mnemonicParsing="false" onAction="#switchToProdInfoScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Product Information" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toMapButton" layoutY="195.0" mnemonicParsing="false" onAction="#switchToMapScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Map" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toScanButton" layoutY="260.0" mnemonicParsing="false" onAction="#switchToCamScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Scan" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="103.0" prefWidth="203.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css" />
+               </children>
+            </VBox>
+            <VBox prefHeight="560.0" prefWidth="608.0">
+               <children>
+                  <Pane prefHeight="116.0" prefWidth="662.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="93.0" prefHeight="17.0" prefWidth="719.0" text="The photos below is the device called SHADE. This application is the interaface of the said device." />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="419.0" prefWidth="607.0">
+                     <children>
+                        <ImageView fx:id="imageViewer" fitHeight="397.0" fitWidth="586.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="27.0" prefWidth="509.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Label layoutY="5.0" prefHeight="17.0" prefWidth="719.0" text="Please proceed to Product Information tab for product selection." />
+                     </children></Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="560.0" prefWidth="128.0">
+               <children>
+                  <Pane prefHeight="562.0" prefWidth="127.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

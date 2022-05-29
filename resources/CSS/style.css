@@ -1,0 +1,51 @@
+.side-vbox-button{
+    -fx-background-color: #BDD99E;
+    -fx-background-radius: 30 0 0 30;
+}
+
+.side-vbox-button:hover{
+    -fx-background-color: #5BB381;
+}
+
+.side-vbox-titlePane{
+    -fx-background-color: #01A66F;
+}
+
+.inner-button{
+        -fx-background-color: #BDD99E;
+        -fx-background-radius: 30 30 30 30;
+}
+.inner-button:hover{
+    -fx-background-color: #5BB381;
+}
+
+.inner-searchBar{
+         -fx-background-radius: 30 30 30 30;
+         -fx-opacity: .4;
+}
+
+.productInfo-card{
+    -fx-background-color: #75CE9F;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.inner-font{
+    -fx-font-family: Verdana;
+    -fx-text-fill: #36454f;
+}
+
+.viewProd-card{
+    -fx-background-color: #01A66F;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.window-style{
+    -fx-background-radius: 30 30 30 30;
+}
+
+.exit-button{
+    -fx-background-radius: 10 30 10 10;
+    -fx-background-color: RED;
+    -fx-opacity: .8;
+
+}

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="560.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProdInfoController">
+   <children>
+      <HBox layoutY="1.0" prefHeight="560.0" prefWidth="943.0" styleClass="window-design" stylesheets="@../CSS/style.css">
+         <children>
+            <VBox prefHeight="560.0" prefWidth="210.0" styleClass="side-vbox" stylesheets="@../CSS/style.css">
+               <children>
+                  <Pane prefHeight="155.0" prefWidth="233.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="51.0" layoutX="8.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/icons8-buying-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="57.0" layoutY="28.0" prefHeight="92.0" prefWidth="151.0" stylesheets="@../CSS/style.css" text="SHADE" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="37.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="23.6" offsetY="1.0" radius="6.94" spread="0.43" width="6.16">
+                                 <color>
+                                    <Color red="0.568771243095398" green="0.6399999856948853" blue="0.0575999990105629" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="305.0" prefWidth="213.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Button fx:id="toHomeButton" mnemonicParsing="false" onAction="#switchToHomeScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Home" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toCartButton" layoutY="65.0" mnemonicParsing="false" onAction="#switchToCartScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Cart" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button disable="true" layoutY="130.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Product Information" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toMapButton" layoutY="195.0" mnemonicParsing="false" onAction="#switchToMapScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Map" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="toScanButton" layoutY="260.0" mnemonicParsing="false" onAction="#switchToCamScene" prefHeight="45.0" prefWidth="215.0" styleClass="side-vbox-button" stylesheets="@../CSS/style.css" text="Scan" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="103.0" prefWidth="203.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css" />
+               </children>
+            </VBox>
+            <VBox prefHeight="560.0" prefWidth="516.0">
+               <children>
+                  <Pane prefHeight="116.0" prefWidth="509.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <TextField fx:id="searchBarTextField" layoutX="176.0" layoutY="67.0" prefHeight="34.0" prefWidth="232.0" styleClass="inner-searchBar" stylesheets="@../CSS/style.css" />
+                        <Label layoutX="11.0" layoutY="64.0" prefHeight="39.0" prefWidth="192.0" styleClass="inner-font" stylesheets="@../CSS/style.css" text="Enter Item:">
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="searchButton" layoutX="420.0" layoutY="66.0" mnemonicParsing="false" onAction="#search" prefHeight="35.0" prefWidth="83.0" styleClass="inner-button" stylesheets="@../CSS/style.css" text="Search" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <HBox>
+                     <children>
+                        <Pane prefHeight="417.0" prefWidth="11.0" stylesheets="@../CSS/style.css" />
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="417.0" prefWidth="509.0" style="-fx-background-color: #F2F2F2;" vbarPolicy="ALWAYS">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="23.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="509.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="719.0" text="Navigate in this section and choose your items or view item information." />
+                     </children></Pane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="560.0" prefWidth="233.0" HBox.hgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="177.0" prefWidth="232.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Pane prefHeight="115.0" prefWidth="232.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="232.0">
+                           <children>
+                              <Label fx:id="selectedTypeLabel" prefHeight="29.0" prefWidth="130.0" styleClass="inner-font" stylesheets="@../CSS/style.css" text="Brand" textFill="#009688" HBox.hgrow="NEVER">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" right="15.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="selectedPriceLabel" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="103.0" styleClass="inner-font" stylesheets="@../CSS/style.css" text="Cost" textFill="#009688" HBox.hgrow="NEVER">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" right="15.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Pane />
+                  <ImageView fx:id="selectedImage" fitHeight="185.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER" />
+                  <Pane prefHeight="202.0" prefWidth="232.0" styleClass="side-vbox-titlePane" stylesheets="@../CSS/style.css">
+                     <children>
+                        <Button fx:id="addToCartButton" layoutX="4.0" layoutY="14.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="45.0" prefWidth="225.0" styleClass="inner-button" stylesheets="@../CSS/style.css" text="Add to Cart" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="viewButton" layoutX="4.0" layoutY="73.0" mnemonicParsing="false" onAction="#viewButton" prefHeight="45.0" prefWidth="225.0" styleClass="inner-button" stylesheets="@../CSS/style.css" text="View" textFill="#36454f">
+                           <font>
+                              <Font name="Verdana Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+Id :1
+Brand :555
+Price :23.0
+Type :Sardines
+Location :Aisle 1
+Stock :35
+ImagePath :/Products/555Green.png
+Information :This is a sample information of a product.
+InCart :0
+Id :2
+Brand :Jack n' Jill
+Price :24.0
+Type :Chips
+Location :Aisle 1
+Stock :35
+ImagePath :/Products/ChippyChilinCheese.png
+Information :This is a sample information of a product.
+InCart :0
+Id :3
+Brand :Clear
+Price :25.0
+Type :Shampoo
+Location :Aisle 1
+Stock :35
+ImagePath :/Products/ClearMenCoolSportMenthol.png
+Information :This is a sample information of a product.
+InCart :0
+Id :4
+Brand :Lucky Me
+Price :26.0
+Type :Noodles
+Location :Aisle 1
+Stock :23
+ImagePath :/Products/LuckyMeKalamansi.png
+Information :This is a sample information of a product.
+InCart :0
+Id :6
+Brand :Mega
+Price :28.0
+Type :Sardines
+Location :Aisle 1
+Stock :33
+ImagePath :/Products/MegaGreen.png
+Information :This is a sample information of a product.
+InCart :0
+Id :7
+Brand :Mega
+Price :28.0
+Type :Sardines
+Location :Aisle 1
+Stock :38
+ImagePath :/Products/MegaRed.png
+Information :This is a sample information of a product.
+InCart :0
+Id :8
+Brand :Lucky Me
+Price :28.0
+Type :Noodles
+Location :Aisle 1
+Stock :73
+ImagePath :/Products/NoodlesChicken.png
+Information :This is a sample information of a product.
+InCart :0
+Id :9
+Brand :Jack n' Jill
+Price :28.0
+Type :Chips
+Location :Aisle 1
+Stock :53
+ImagePath :/Products/NovaCheddarCheese.png
+Information :This is a sample information of a product.
+InCart :0
+Id :10
+Brand :Payless
+Price :28.0
+Type :Noodles
+Location :Aisle 1
+Stock :73
+ImagePath :/Products/PaylessExtraHot.png
+Information :This is a sample information of a product.
+InCart :0
+Id :11
+Brand :Payless
+Price :28.0
+Type :Noodles
+Location :Aisle 1
+Stock :63
+ImagePath :/Products/PaylessSweetSpicy.png
+Information :This is a sample information of a product.
+InCart :0
+Id :12
+Brand :Jack n' Jill
+Price :28.0
+Type :Chips
+Location :Aisle 1
+Stock :43
+ImagePath :/Products/PiattosCheese.png
+Information :This is a sample information of a product.
+InCart :0
+Id :13
+Brand :Jack n' Jill
+Price :28.0
+Type :Chips
+Location :Aisle 1
+Stock :53
+ImagePath :/Products/PiattosNachoPizza.png
+Information :This is a sample information of a product.
+InCart :0
+Id :14
+Brand :555
+Price :28.0
+Type :Sardines
+Location :Aisle 1
+Stock :93
+ImagePath :/Products/YoungsTownGreen.png
+Information :This is a sample information of a product.
+InCart :0
